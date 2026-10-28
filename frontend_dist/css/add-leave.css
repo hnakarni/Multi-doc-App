@@ -1,0 +1,828 @@
+/*=========================================
+        ADD LEAVE PAGE
+=========================================*/
+
+.add-leave-page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #f7fbfa;
+
+}
+
+
+/*=========================================
+        BANNER
+=========================================*/
+
+.add-leave-banner {
+
+    background: linear-gradient(135deg, #0b7a68, #17b59b);
+
+    color: #fff;
+
+    padding: 80px 0;
+
+}
+
+.add-leave-breadcrumb {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+}
+
+.add-leave-breadcrumb a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.add-leave-breadcrumb a:hover {
+
+    color: #ff7a1a;
+
+}
+
+.add-leave-banner h1 {
+
+    font-size: 46px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+}
+
+.add-leave-banner p {
+
+    max-width: 650px;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+}
+
+
+/*=========================================
+        MAIN
+=========================================*/
+
+.add-leave-main {
+
+    padding: 90px 0;
+
+}
+
+.add-leave-layout {
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    gap: 35px;
+
+    align-items: start;
+
+}
+
+
+/*=========================================
+        SIDEBAR
+=========================================*/
+
+.add-leave-sidebar {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+    position: sticky;
+
+    top: 30px;
+
+}
+
+
+/*=========================================
+        SIDEBAR TOP
+=========================================*/
+
+.add-leave-sidebar-top {
+
+    background: linear-gradient(135deg, #0b7a68, #17b59b);
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+}
+
+.add-leave-sidebar-top img {
+
+     width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: flex;
+
+    justify-self: center;
+
+    border: 5px solid rgba(255, 255, 255, .25);
+
+    margin-bottom: 20px;
+
+}
+
+.add-leave-sidebar-top h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+
+}
+
+.add-leave-sidebar-top p {
+
+    font-size: 15px;
+
+    opacity: .9;
+
+}
+
+
+/*=========================================
+        MENU
+=========================================*/
+
+.add-leave-menu {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 20px;
+
+}
+
+.add-leave-menu li {
+
+    margin-bottom: 10px;
+
+}
+
+.add-leave-menu-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 18px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    color: #444;
+
+    font-weight: 500;
+
+    transition: .35s;
+
+}
+
+.add-leave-menu-link i {
+
+    width: 22px;
+
+    color: #0b7a68;
+
+}
+
+.add-leave-menu-link:hover {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    transform: translateX(6px);
+
+}
+
+.add-leave-menu-link:hover i {
+
+    color: #fff;
+
+}
+
+.add-leave-menu-link.active {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+}
+
+.add-leave-menu-link.active i {
+
+    color: #fff;
+
+}
+
+
+/*=========================================
+        CONTENT
+=========================================*/
+
+.add-leave-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.add-leave-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+}
+
+.add-leave-header {
+
+    margin-bottom: 35px;
+
+}
+
+.add-leave-header h2 {
+
+    font-size: 34px;
+
+    color: #0b7a68;
+
+    margin-bottom: 10px;
+
+}
+
+.add-leave-header p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+}
+
+
+/*=========================================
+        FORM GRID
+=========================================*/
+
+.add-leave-form-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+
+}
+
+.add-leave-full {
+
+    grid-column: 1/-1;
+
+}
+
+.add-leave-form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.add-leave-form-group label {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 10px;
+
+}
+
+.add-leave-form-group input,
+.add-leave-form-group select,
+.add-leave-form-group textarea {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: .35s;
+
+    background: #fff;
+
+}
+
+.add-leave-form-group textarea {
+
+    resize: vertical;
+
+    min-height: 140px;
+
+    line-height: 1.7;
+
+}
+
+.add-leave-form-group input:focus,
+.add-leave-form-group select:focus,
+.add-leave-form-group textarea:focus {
+
+    border-color: #0b7a68;
+
+    box-shadow: 0 0 0 4px rgba(11, 122, 104, .08);
+
+}
+
+/*=========================================
+        BUTTONS
+=========================================*/
+
+.add-leave-buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+
+}
+
+.add-leave-save-btn,
+.add-leave-reset-btn {
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .35s;
+
+}
+
+.add-leave-save-btn {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+}
+
+.add-leave-save-btn:hover {
+
+    background: #096857;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(11, 122, 104, .25);
+
+}
+
+.add-leave-reset-btn {
+
+    background: #eceff1;
+
+    color: #444;
+
+}
+
+.add-leave-reset-btn:hover {
+
+    background: #dde2e6;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*=========================================
+        TABLE
+=========================================*/
+
+.add-leave-table-section {
+
+    margin-top: 20px;
+
+}
+
+.add-leave-table-header {
+
+    margin-bottom: 20px;
+
+}
+
+.add-leave-table-header h3 {
+
+    color: #0b7a68;
+
+    font-size: 26px;
+
+}
+
+.add-leave-table-wrapper {
+
+    overflow-x: auto;
+
+}
+
+.add-leave-table {
+
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+
+}
+
+.add-leave-table thead {
+
+    background: #0b7a68;
+
+}
+
+.add-leave-table th {
+
+    color: #fff;
+
+    padding: 16px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+}
+
+.add-leave-table td {
+
+    padding: 16px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eee;
+
+    color: #555;
+
+}
+
+.add-leave-table tbody tr {
+
+    transition: .3s;
+
+}
+
+.add-leave-table tbody tr:hover {
+
+    background: #f6fbfa;
+
+}
+
+
+/*=========================================
+        STATUS BADGES
+=========================================*/
+
+.leave-status {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 95px;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.leave-status.approved {
+
+    background: #dff8ea;
+
+    color: #159c58;
+
+}
+
+.leave-status.pending {
+
+    background: #fff4d8;
+
+    color: #d98d00;
+
+}
+
+.leave-status.rejected {
+
+    background: #ffe4e4;
+
+    color: #dc3d3d;
+
+}
+
+
+/*=========================================
+        DELETE BUTTON
+=========================================*/
+
+.leave-delete-btn {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #e53935;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+}
+
+.leave-delete-btn:hover {
+
+    background: #c62828;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*=========================================
+        CARD HOVER
+=========================================*/
+
+.add-leave-card {
+
+    transition: .35s;
+
+}
+
+.add-leave-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+
+/*=========================================
+        TABLE SCROLLBAR
+=========================================*/
+
+.add-leave-table-wrapper::-webkit-scrollbar {
+
+    height: 8px;
+
+}
+
+.add-leave-table-wrapper::-webkit-scrollbar-track {
+
+    background: #ececec;
+
+    border-radius: 20px;
+
+}
+
+.add-leave-table-wrapper::-webkit-scrollbar-thumb {
+
+    background: #0b7a68;
+
+    border-radius: 20px;
+
+}
+
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px) {
+
+    .add-leave-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .add-leave-sidebar {
+
+        position: relative;
+
+        top: 0;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .add-leave-main {
+
+        padding: 60px 0;
+
+    }
+
+    .add-leave-banner {
+
+        padding: 70px 0;
+
+    }
+
+    .add-leave-banner h1 {
+
+        font-size: 32px;
+
+    }
+
+    .add-leave-card {
+
+        padding: 25px;
+
+    }
+
+    .add-leave-form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .add-leave-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .add-leave-save-btn,
+    .add-leave-reset-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .add-leave-banner {
+
+        padding: 55px 0;
+
+    }
+
+    .add-leave-banner h1 {
+
+        font-size: 28px;
+
+    }
+
+    .add-leave-breadcrumb {
+
+        flex-wrap: wrap;
+
+        font-size: 13px;
+
+    }
+
+    .add-leave-sidebar-top img {
+
+        width: 95px;
+
+        height: 95px;
+
+    }
+
+    .add-leave-sidebar-top h3 {
+
+        font-size: 20px;
+
+    }
+
+    .add-leave-card {
+
+        padding: 20px;
+
+    }
+
+    .add-leave-header h2 {
+
+        font-size: 26px;
+
+    }
+
+    .add-leave-table th,
+    .add-leave-table td {
+
+        padding: 12px;
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/*=========================================
+        SCROLL ANIMATION
+=========================================*/
+
+.add-leave-hidden {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: .8s;
+
+}
+
+.add-leave-show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}

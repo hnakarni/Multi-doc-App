@@ -1,0 +1,1279 @@
+/*=========================================
+        DOCTOR DASHBOARD PAGE
+=========================================*/
+
+.doctor-dashboard-page {
+
+    width: 100%;
+
+    background: #f6fbfa;
+
+    min-height: 100vh;
+
+}
+
+
+/*=========================================
+        BANNER
+=========================================*/
+
+.doctor-dashboard-banner {
+
+    background: linear-gradient(135deg, #0b7a68, #17b59b);
+
+    color: #fff;
+
+    padding: 80px 0;
+
+}
+
+.doctor-dashboard-breadcrumb {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    font-size: 15px;
+
+}
+
+.doctor-dashboard-breadcrumb a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.doctor-dashboard-breadcrumb a:hover {
+
+    color: #ff7a1a;
+
+}
+
+.doctor-dashboard-banner h1 {
+
+    font-size: 46px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+}
+
+.doctor-dashboard-banner p {
+
+    max-width: 650px;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+}
+
+
+/*=========================================
+        MAIN
+=========================================*/
+
+.doctor-dashboard-main {
+
+    padding: 90px 0;
+
+}
+
+.doctor-dashboard-layout {
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    gap: 35px;
+
+    align-items: start;
+
+}
+
+
+/*=========================================
+        SIDEBAR
+=========================================*/
+
+.doctor-dashboard-sidebar {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+    position: sticky;
+
+    top: 30px;
+
+}
+
+
+/*=========================================
+        PROFILE
+=========================================*/
+
+.doctor-dashboard-profile {
+
+    background: linear-gradient(135deg, #0b7a68, #17b59b);
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    color: #fff;
+
+}
+
+.doctor-dashboard-profile img {
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: flex;
+
+    justify-self: center;
+
+    border: 5px solid rgba(255, 255, 255, .25);
+
+    margin-bottom: 20px;
+
+}
+
+.doctor-dashboard-profile h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+
+}
+
+.doctor-dashboard-profile p {
+
+    font-size: 15px;
+
+    opacity: .9;
+
+}
+
+
+/*=========================================
+        SIDEBAR MENU
+=========================================*/
+
+.doctor-dashboard-menu {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 20px;
+
+}
+
+.doctor-dashboard-menu li {
+
+    margin-bottom: 10px;
+
+}
+
+.doctor-dashboard-menu-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 18px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    color: #444;
+
+    font-weight: 500;
+
+    transition: .35s;
+
+}
+
+.doctor-dashboard-menu-link i {
+
+    width: 22px;
+
+    font-size: 18px;
+
+    color: #0b7a68;
+
+}
+
+.doctor-dashboard-menu-link:hover {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    transform: translateX(6px);
+
+}
+
+.doctor-dashboard-menu-link:hover i {
+
+    color: #fff;
+
+}
+
+.doctor-dashboard-menu-link.active {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+}
+
+.doctor-dashboard-menu-link.active i {
+
+    color: #fff;
+
+}
+
+
+/*=========================================
+        CONTENT
+=========================================*/
+
+.doctor-dashboard-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+
+}
+
+
+/*=========================================
+        HEADER
+=========================================*/
+
+.doctor-dashboard-header {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+}
+
+.doctor-dashboard-header h2 {
+
+    font-size: 34px;
+
+    color: #0b7a68;
+
+    margin-bottom: 10px;
+
+}
+
+.doctor-dashboard-header span {
+
+    color: #ff7a1a;
+
+}
+
+.doctor-dashboard-header p {
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/*=========================================
+        STATISTICS SECTION
+=========================================*/
+
+.doctor-dashboard-stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/*=========================================
+        STAT CARD
+=========================================*/
+
+.doctor-dashboard-stat-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.doctor-dashboard-stat-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 6px;
+
+    height: 100%;
+
+    background: #0b7a68;
+
+    transition: .35s;
+
+}
+
+.doctor-dashboard-stat-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+.doctor-dashboard-stat-card:hover::before {
+
+    width: 100%;
+
+    opacity: .05;
+
+}
+
+
+/*=========================================
+        ICON
+=========================================*/
+
+.doctor-dashboard-stat-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #e8faf6;
+
+    flex-shrink: 0;
+
+}
+
+.doctor-dashboard-stat-icon i {
+
+    font-size: 32px;
+
+    color: #0b7a68;
+
+}
+
+
+/*=========================================
+        INFO
+=========================================*/
+
+.doctor-dashboard-stat-info {
+
+    flex: 1;
+
+}
+
+.doctor-dashboard-stat-info h3 {
+
+    font-size: 32px;
+
+    color: #222;
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+
+}
+
+.doctor-dashboard-stat-info p {
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+/*=========================================
+        DIFFERENT ICON COLORS
+=========================================*/
+
+.doctor-dashboard-stat-card:nth-child(1) .doctor-dashboard-stat-icon {
+
+    background: #fff4dd;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(1) .doctor-dashboard-stat-icon i {
+
+    color: #ff9800;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(2) .doctor-dashboard-stat-icon {
+
+    background: #e8faf6;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(2) .doctor-dashboard-stat-icon i {
+
+    color: #0b7a68;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(3) .doctor-dashboard-stat-icon {
+
+    background: #e9f1ff;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(3) .doctor-dashboard-stat-icon i {
+
+    color: #2563eb;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(4) .doctor-dashboard-stat-icon {
+
+    background: #eefcf2;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(4) .doctor-dashboard-stat-icon i {
+
+    color: #16a34a;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(5) .doctor-dashboard-stat-icon {
+
+    background: #fff3ea;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(5) .doctor-dashboard-stat-icon i {
+
+    color: #ff6b35;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(6) .doctor-dashboard-stat-icon {
+
+    background: #fff7d9;
+
+}
+
+.doctor-dashboard-stat-card:nth-child(6) .doctor-dashboard-stat-icon i {
+
+    color: #f4b400;
+
+}
+
+
+/*=========================================
+        NUMBER ANIMATION LOOK
+=========================================*/
+
+.doctor-dashboard-stat-info h3 {
+
+    transition: .35s;
+
+}
+
+.doctor-dashboard-stat-card:hover .doctor-dashboard-stat-info h3 {
+
+    color: #0b7a68;
+
+}
+
+
+/*=========================================
+        COMMON SECTION CARD
+=========================================*/
+
+.doctor-dashboard-appointments,
+.doctor-dashboard-revenue-card,
+.doctor-dashboard-patients-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+}
+
+.doctor-dashboard-appointments:hover,
+.doctor-dashboard-revenue-card:hover,
+.doctor-dashboard-patients-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+
+/*=========================================
+        SECTION HEADER
+=========================================*/
+
+.doctor-dashboard-section-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+.doctor-dashboard-section-header h3 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 24px;
+
+    color: #0b7a68;
+
+}
+
+.doctor-dashboard-section-header i {
+
+    color: #0b7a68;
+
+}
+
+.doctor-dashboard-view-all {
+
+    color: #0b7a68;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.doctor-dashboard-view-all:hover {
+
+    color: #ff7a1a;
+
+}
+
+
+/*=========================================
+        TABLE
+=========================================*/
+
+.doctor-dashboard-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+.doctor-dashboard-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 800px;
+
+}
+
+.doctor-dashboard-table thead {
+
+    background: #0b7a68;
+
+}
+
+.doctor-dashboard-table th {
+
+    color: #fff;
+
+    padding: 16px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+}
+
+.doctor-dashboard-table td {
+
+    padding: 16px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eee;
+
+    color: #555;
+
+}
+
+.doctor-dashboard-table tbody tr {
+
+    transition: .3s;
+
+}
+
+.doctor-dashboard-table tbody tr:hover {
+
+    background: #f6fbfa;
+
+}
+
+
+/*=========================================
+        STATUS
+=========================================*/
+
+.doctor-dashboard-status {
+
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.doctor-dashboard-status.pending {
+
+    background: #fff4d8;
+
+    color: #d98d00;
+
+}
+
+.doctor-dashboard-status.completed {
+
+    background: #dff8ea;
+
+    color: #159c58;
+
+}
+
+.doctor-dashboard-status.ongoing {
+
+    background: #e8f1ff;
+
+    color: #2563eb;
+
+}
+
+.doctor-dashboard-status.cancelled {
+
+    background: #ffe4e4;
+
+    color: #dc3d3d;
+
+}
+
+
+/*=========================================
+        ACTION BUTTON
+=========================================*/
+
+.doctor-dashboard-action-btn {
+
+    border: none;
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+    font-size: 14px;
+
+}
+
+.doctor-dashboard-action-btn:hover {
+
+    background: #ff7a1a;
+
+}
+
+
+/*=========================================
+        BOTTOM GRID
+=========================================*/
+
+.doctor-dashboard-bottom {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+}
+
+
+/*=========================================
+        REVENUE
+=========================================*/
+
+.doctor-dashboard-revenue-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+.doctor-dashboard-revenue-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px;
+
+    background: #f7fbfa;
+
+    border-radius: 12px;
+
+    transition: .3s;
+
+}
+
+.doctor-dashboard-revenue-item:hover {
+
+    background: #e8faf6;
+
+}
+
+.doctor-dashboard-revenue-item span {
+
+    color: #555;
+
+}
+
+.doctor-dashboard-revenue-item strong {
+
+    color: #0b7a68;
+
+    font-size: 18px;
+
+}
+
+
+/*=========================================
+        RECENT PATIENTS
+=========================================*/
+
+.doctor-dashboard-patient-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+.doctor-dashboard-patient-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    transition: .35s;
+
+}
+
+.doctor-dashboard-patient-item:hover {
+
+    background: #f6fbfa;
+
+}
+
+.doctor-dashboard-patient-item img {
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+.doctor-dashboard-patient-item h4 {
+
+    color: #222;
+
+    margin-bottom: 6px;
+
+}
+
+.doctor-dashboard-patient-item p {
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+/*=========================================
+        RESPONSIVE - LARGE DEVICES
+=========================================*/
+
+@media(max-width:1200px) {
+
+    .doctor-dashboard-layout {
+
+        grid-template-columns: 280px 1fr;
+
+    }
+
+    .doctor-dashboard-stats {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/*=========================================
+        RESPONSIVE - TABLET
+=========================================*/
+
+@media(max-width:992px) {
+
+    .doctor-dashboard-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .doctor-dashboard-sidebar {
+
+        position: relative;
+
+        top: 0;
+
+    }
+
+    .doctor-dashboard-bottom {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .doctor-dashboard-banner h1 {
+
+        font-size: 38px;
+
+    }
+
+}
+
+
+/*=========================================
+        RESPONSIVE - MOBILE
+=========================================*/
+
+@media(max-width:768px) {
+
+    .doctor-dashboard-main {
+
+        padding: 60px 0;
+
+    }
+
+    .doctor-dashboard-banner {
+
+        padding: 70px 0;
+
+    }
+
+    .doctor-dashboard-banner h1 {
+
+        font-size: 32px;
+
+    }
+
+    .doctor-dashboard-banner p {
+
+        font-size: 15px;
+
+    }
+
+    .doctor-dashboard-header {
+
+        padding: 25px;
+
+    }
+
+    .doctor-dashboard-header h2 {
+
+        font-size: 28px;
+
+    }
+
+    .doctor-dashboard-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .doctor-dashboard-stat-card {
+
+        padding: 22px;
+
+    }
+
+    .doctor-dashboard-stat-info h3 {
+
+        font-size: 26px;
+
+    }
+
+    .doctor-dashboard-section-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+    }
+
+}
+
+
+/*=========================================
+        RESPONSIVE - SMALL MOBILE
+=========================================*/
+
+@media(max-width:576px) {
+
+    .doctor-dashboard-profile {
+
+        padding: 25px;
+
+    }
+
+    .doctor-dashboard-profile img {
+
+        width: 95px;
+
+        height: 95px;
+
+    }
+
+    .doctor-dashboard-profile h3 {
+
+        font-size: 20px;
+
+    }
+
+    .doctor-dashboard-menu {
+
+        padding: 15px;
+
+    }
+
+    .doctor-dashboard-menu-link {
+
+        padding: 12px 15px;
+
+        font-size: 14px;
+
+    }
+
+    .doctor-dashboard-header {
+
+        padding: 20px;
+
+    }
+
+    .doctor-dashboard-header h2 {
+
+        font-size: 24px;
+
+    }
+
+    .doctor-dashboard-header p {
+
+        font-size: 14px;
+
+    }
+
+    .doctor-dashboard-stat-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        text-align: left;
+
+    }
+
+    .doctor-dashboard-stat-icon {
+
+        width: 60px;
+
+        height: 60px;
+
+    }
+
+    .doctor-dashboard-stat-icon i {
+
+        font-size: 26px;
+
+    }
+
+    .doctor-dashboard-stat-info h3 {
+
+        font-size: 24px;
+
+    }
+
+    .doctor-dashboard-appointments,
+    .doctor-dashboard-revenue-card,
+    .doctor-dashboard-patients-card {
+
+        padding: 20px;
+
+    }
+
+    .doctor-dashboard-table th,
+    .doctor-dashboard-table td {
+
+        padding: 12px;
+
+        font-size: 13px;
+
+    }
+
+    .doctor-dashboard-action-btn {
+
+        padding: 8px 15px;
+
+        font-size: 13px;
+
+    }
+
+    .doctor-dashboard-patient-item {
+
+        gap: 12px;
+
+    }
+
+    .doctor-dashboard-patient-item img {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}
+
+
+/*=========================================
+        TABLE SCROLLBAR
+=========================================*/
+
+.doctor-dashboard-table-wrapper::-webkit-scrollbar {
+
+    height: 8px;
+
+}
+
+.doctor-dashboard-table-wrapper::-webkit-scrollbar-track {
+
+    background: #ececec;
+
+    border-radius: 20px;
+
+}
+
+.doctor-dashboard-table-wrapper::-webkit-scrollbar-thumb {
+
+    background: #0b7a68;
+
+    border-radius: 20px;
+
+}
+
+.doctor-dashboard-table-wrapper::-webkit-scrollbar-thumb:hover {
+
+    background: #08695b;
+
+}
+
+
+/*=========================================
+        CARD HOVER
+=========================================*/
+
+.doctor-dashboard-stat-card,
+.doctor-dashboard-appointments,
+.doctor-dashboard-revenue-card,
+.doctor-dashboard-patients-card,
+.doctor-dashboard-header {
+
+    transition: .35s;
+
+}
+
+.doctor-dashboard-header:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+
+/*=========================================
+        SCROLL ANIMATION
+=========================================*/
+
+.doctor-dashboard-hidden {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: .8s;
+
+}
+
+.doctor-dashboard-show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/*=========================================
+        SMOOTH TRANSITIONS
+=========================================*/
+
+.doctor-dashboard-page * {
+
+    transition:
+
+        background .3s,
+
+        color .3s,
+
+        border .3s,
+
+        box-shadow .3s;
+
+}

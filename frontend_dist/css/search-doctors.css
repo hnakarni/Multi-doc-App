@@ -1,0 +1,525 @@
+/*=========================================
+        SEARCH DOCTORS PAGE
+=========================================*/
+
+.search-doctors-page {
+
+    background: #f7fbfa;
+
+    min-height: 100vh;
+
+}
+
+
+/*=========================================
+        BANNER
+=========================================*/
+
+.search-doctors-banner {
+    width: 100%;
+    background: linear-gradient(135deg,
+            #0B7D69 0%,
+            #0F8C76 100%);
+    padding: 90px 0;
+
+}
+
+.search-doctors-banner::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -120px;
+    right: -120px;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .05);
+
+}
+
+.search-doctors-banner::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -150px;
+    left: -150px;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .04);
+
+}
+
+.search-doctors-banner .container {
+
+    max-width: 1399px;
+
+    margin: auto;
+
+    padding: 0 20px;
+
+}
+
+.search-doctors-banner h1 {
+
+    font-size: 60px;
+
+    font-weight: 700;
+
+    color: #fff;
+
+    margin-bottom: 15px;
+
+}
+
+.search-doctors-banner p {
+
+    color: #EAF8F5;
+
+    font-size: 20px;
+
+    max-width: 600px;
+
+    line-height: 30px;
+
+}
+
+.search-doctors-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+}
+
+.search-doctors-breadcrumb a {
+
+    color: #DFF7F0;
+
+    text-decoration: none;
+
+}
+
+.search-doctors-breadcrumb span {
+
+    color: #fff;
+
+}
+
+
+/*=========================================
+        SEARCH CARD
+=========================================*/
+
+.search-doctors-search-section {
+
+    margin-top: -65px;
+
+    padding-bottom: 60px;
+
+}
+
+.search-doctors-search-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .08);
+
+}
+
+.search-doctors-search-card h2 {
+
+    color: #0b7a68;
+
+    margin-bottom: 35px;
+
+    font-size: 30px;
+
+}
+
+.search-doctors-form {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+.search-doctors-field {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.search-doctors-field label {
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+
+    color: #333;
+
+}
+
+.search-doctors-field input,
+
+.search-doctors-field select {
+
+    height: 55px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 0 15px;
+
+    font-size: 15px;
+
+    transition: .3s;
+
+}
+
+.search-doctors-field input:focus,
+
+.search-doctors-field select:focus {
+
+    border-color: #0b7a68;
+
+    outline: none;
+
+}
+
+
+/*=========================================
+        BUTTONS
+=========================================*/
+
+.search-doctors-buttons {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+.search-doctors-search-btn {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    font-size: 16px;
+
+}
+
+.search-doctors-search-btn:hover {
+
+    background: #08695b;
+
+}
+
+.search-doctors-clear-btn {
+
+    background: #f1f1f1;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.search-doctors-clear-btn:hover {
+
+    background: #ddd;
+
+}
+
+
+/*=========================================
+        RESULT GRID
+=========================================*/
+
+.search-doctors-results-section {
+
+    padding: 70px 0;
+
+}
+
+.search-doctors-results-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+}
+
+
+/*=========================================
+        CARD
+=========================================*/
+
+.search-doctors-card {
+
+    display: flex;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+}
+
+.search-doctors-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+.search-doctors-image {
+
+    width: 260px;
+
+    flex-shrink: 0;
+
+}
+
+.search-doctors-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.search-doctors-content {
+
+    padding: 28px;
+
+    flex: 1;
+
+}
+
+.search-doctors-speciality {
+
+    display: inline-block;
+
+    background: #e8faf6;
+
+    color: #0b7a68;
+
+    padding: 7px 15px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+}
+
+.search-doctors-content h3 {
+
+    font-size: 26px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+
+}
+
+.search-doctors-degree {
+
+    color: #777;
+
+    margin-bottom: 18px;
+
+}
+
+.search-doctors-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+}
+
+.search-doctors-info span {
+
+    color: #555;
+
+}
+
+.search-doctors-rating {
+
+    color: #f4b400;
+
+    margin-bottom: 25px;
+
+    font-size: 18px;
+
+}
+
+.search-doctors-rating span {
+
+    color: #444;
+
+    font-size: 15px;
+
+}
+
+.search-doctors-profile-btn {
+
+    display: inline-block;
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    padding: 13px 28px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.search-doctors-profile-btn:hover {
+
+    background: #ff7a1a;
+
+}
+
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:1100px) {
+
+    .search-doctors-results-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .search-doctors-form {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .search-doctors-form {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .search-doctors-card {
+
+        flex-direction: column;
+
+    }
+
+    .search-doctors-image {
+
+        width: 100%;
+
+        height: 260px;
+
+    }
+
+    .search-doctors-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .search-doctors-banner h1 {
+
+        font-size: 36px;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .search-doctors-search-card {
+
+        padding: 25px;
+
+    }
+
+    .search-doctors-content {
+
+        padding: 20px;
+
+    }
+
+    .search-doctors-content h3 {
+
+        font-size: 22px;
+
+    }
+
+}

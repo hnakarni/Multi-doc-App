@@ -1,0 +1,779 @@
+/*=========================================
+        SETUP SCHEDULE PAGE
+=========================================*/
+
+.setup-schedule-page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #f7fbfa;
+
+}
+
+
+/*=========================================
+        BANNER
+=========================================*/
+
+.setup-schedule-banner {
+
+    background: linear-gradient(135deg, #0b7a68, #17b59b);
+
+    color: #fff;
+
+    padding: 80px 0;
+
+}
+
+.setup-schedule-breadcrumb {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+}
+
+.setup-schedule-breadcrumb a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.setup-schedule-breadcrumb a:hover {
+
+    color: #ff7a1a;
+
+}
+
+.setup-schedule-banner h1 {
+
+    font-size: 46px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+}
+
+.setup-schedule-banner p {
+
+    max-width: 650px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/*=========================================
+        MAIN
+=========================================*/
+
+.setup-schedule-main {
+
+    padding: 90px 0;
+
+}
+
+.setup-schedule-layout {
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    gap: 35px;
+
+    align-items: start;
+
+}
+
+
+/*=========================================
+        SIDEBAR
+=========================================*/
+
+.setup-schedule-sidebar {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+    position: sticky;
+
+    top: 30px;
+
+}
+
+
+/*=========================================
+        SIDEBAR TOP
+=========================================*/
+
+.setup-schedule-sidebar-top {
+
+    background: linear-gradient(135deg, #0b7a68, #17b59b);
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+}
+
+.setup-schedule-sidebar-top img {
+
+     width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: flex;
+
+    justify-self: center;
+
+    border: 5px solid rgba(255, 255, 255, .25);
+
+    margin-bottom: 20px;
+
+}
+
+.setup-schedule-sidebar-top h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+
+}
+
+.setup-schedule-sidebar-top p {
+
+    font-size: 15px;
+
+    opacity: .9;
+
+}
+
+
+/*=========================================
+        MENU
+=========================================*/
+
+.setup-schedule-menu {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 20px;
+
+}
+
+.setup-schedule-menu li {
+
+    margin-bottom: 10px;
+
+}
+
+.setup-schedule-menu-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 18px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    color: #444;
+
+    font-weight: 500;
+
+    transition: .35s;
+
+}
+
+.setup-schedule-menu-link i {
+
+    width: 22px;
+
+    color: #0b7a68;
+
+}
+
+.setup-schedule-menu-link:hover {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    transform: translateX(6px);
+
+}
+
+.setup-schedule-menu-link:hover i {
+
+    color: #fff;
+
+}
+
+.setup-schedule-menu-link.active {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+}
+
+.setup-schedule-menu-link.active i {
+
+    color: #fff;
+
+}
+
+
+/*=========================================
+        CONTENT
+=========================================*/
+
+.setup-schedule-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.setup-schedule-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+}
+
+.setup-schedule-header {
+
+    margin-bottom: 35px;
+
+}
+
+.setup-schedule-header h2 {
+
+    font-size: 34px;
+
+    color: #0b7a68;
+
+    margin-bottom: 10px;
+
+}
+
+.setup-schedule-header p {
+
+    color: #666;
+
+    line-height: 1.7;
+
+}
+
+
+/*=========================================
+        FORM GRID
+=========================================*/
+
+.setup-schedule-form-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+
+}
+
+.setup-schedule-form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.setup-schedule-form-group label {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 10px;
+
+}
+
+.setup-schedule-form-group input {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: .35s;
+
+}
+
+.setup-schedule-form-group input:focus {
+
+    border-color: #0b7a68;
+
+    box-shadow: 0 0 0 4px rgba(11, 122, 104, .08);
+
+}
+
+
+/*=========================================
+        BUTTONS
+=========================================*/
+
+.setup-schedule-buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+
+}
+
+.setup-schedule-save-btn,
+.setup-schedule-reset-btn {
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .35s;
+
+}
+
+.setup-schedule-save-btn {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+}
+
+.setup-schedule-save-btn:hover {
+
+    background: #096857;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(11, 122, 104, .25);
+
+}
+
+.setup-schedule-reset-btn {
+
+    background: #eceff1;
+
+    color: #444;
+
+}
+
+.setup-schedule-reset-btn:hover {
+
+    background: #dde2e6;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*=========================================
+        TABLE
+=========================================*/
+
+.setup-schedule-table-section {
+
+    margin-top: 20px;
+
+}
+
+.setup-schedule-table-header {
+
+    margin-bottom: 20px;
+
+}
+
+.setup-schedule-table-header h3 {
+
+    color: #0b7a68;
+
+    font-size: 26px;
+
+}
+
+.setup-schedule-table-wrapper {
+
+    overflow-x: auto;
+
+}
+
+.setup-schedule-table {
+
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse: collapse;
+
+}
+
+.setup-schedule-table thead {
+
+    background: #0b7a68;
+
+}
+
+.setup-schedule-table th {
+
+    color: #fff;
+
+    padding: 16px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+}
+
+.setup-schedule-table td {
+
+    padding: 16px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eee;
+
+    color: #555;
+
+}
+
+.setup-schedule-table tbody tr {
+
+    transition: .3s;
+
+}
+
+.setup-schedule-table tbody tr:hover {
+
+    background: #f6fbfa;
+
+}
+
+
+/*=========================================
+        ACTION BUTTONS
+=========================================*/
+
+.schedule-edit-btn,
+.schedule-delete-btn {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    transition: .35s;
+
+}
+
+.schedule-edit-btn {
+
+    background: #0b7a68;
+
+    margin-right: 8px;
+
+}
+
+.schedule-edit-btn:hover {
+
+    background: #ff9800;
+
+    transform: translateY(-3px);
+
+}
+
+.schedule-delete-btn {
+
+    background: #e53935;
+
+}
+
+.schedule-delete-btn:hover {
+
+    background: #c62828;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*=========================================
+        CARD HOVER
+=========================================*/
+
+.setup-schedule-card {
+
+    transition: .35s;
+
+}
+
+.setup-schedule-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+
+/*=========================================
+        TABLE SCROLLBAR
+=========================================*/
+
+.setup-schedule-table-wrapper::-webkit-scrollbar {
+
+    height: 8px;
+
+}
+
+.setup-schedule-table-wrapper::-webkit-scrollbar-track {
+
+    background: #ececec;
+
+    border-radius: 20px;
+
+}
+
+.setup-schedule-table-wrapper::-webkit-scrollbar-thumb {
+
+    background: #0b7a68;
+
+    border-radius: 20px;
+
+}
+
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px) {
+
+    .setup-schedule-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .setup-schedule-sidebar {
+
+        position: relative;
+
+        top: 0;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .setup-schedule-main {
+
+        padding: 60px 0;
+
+    }
+
+    .setup-schedule-banner {
+
+        padding: 70px 0;
+
+    }
+
+    .setup-schedule-banner h1 {
+
+        font-size: 32px;
+
+    }
+
+    .setup-schedule-card {
+
+        padding: 25px;
+
+    }
+
+    .setup-schedule-form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .setup-schedule-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .setup-schedule-save-btn,
+    .setup-schedule-reset-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .setup-schedule-banner {
+
+        padding: 55px 0;
+
+    }
+
+    .setup-schedule-banner h1 {
+
+        font-size: 28px;
+
+    }
+
+    .setup-schedule-breadcrumb {
+
+        flex-wrap: wrap;
+
+        font-size: 13px;
+
+    }
+
+    .setup-schedule-sidebar-top img {
+
+        width: 95px;
+
+        height: 95px;
+
+    }
+
+    .setup-schedule-sidebar-top h3 {
+
+        font-size: 20px;
+
+    }
+
+    .setup-schedule-card {
+
+        padding: 20px;
+
+    }
+
+    .setup-schedule-header h2 {
+
+        font-size: 26px;
+
+    }
+
+    .setup-schedule-table th,
+    .setup-schedule-table td {
+
+        padding: 12px;
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/*=========================================
+        SCROLL ANIMATION
+=========================================*/
+
+.setup-schedule-hidden {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: .8s;
+
+}
+
+.setup-schedule-show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}

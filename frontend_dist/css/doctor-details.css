@@ -1,0 +1,1110 @@
+/*=========================================
+        DOCTOR DETAILS PAGE
+=========================================*/
+
+.doctor-details-page {
+
+    width: 100%;
+
+    background: #f7fbfa;
+
+}
+
+
+/*=========================================
+        BANNER
+=========================================*/
+
+.doctor-details-banner {
+
+    background: linear-gradient(135deg, #0b7a68, #18b59d);
+
+    padding: 90px 0;
+
+    color: #fff;
+
+}
+
+.doctor-details-breadcrumb {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+}
+
+.doctor-details-breadcrumb a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.doctor-details-breadcrumb a:hover {
+
+    color: #ff7a1a;
+
+}
+
+.doctor-details-banner h1 {
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+}
+
+.doctor-details-banner p {
+
+    font-size: 18px;
+
+    max-width: 650px;
+
+    line-height: 1.8;
+
+}
+
+
+/*=========================================
+        MAIN SECTION
+=========================================*/
+
+.doctor-details-main {
+
+    padding: 90px 0;
+
+}
+
+.doctor-details-grid {
+
+    display: grid;
+
+    grid-template-columns: 360px 1fr;
+
+    gap: 40px;
+
+    align-items: flex-start;
+
+}
+
+
+/*=========================================
+        PROFILE CARD
+=========================================*/
+
+.doctor-details-profile-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+}
+
+.doctor-details-profile-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .12);
+
+}
+
+
+/*=========================================
+        PROFILE IMAGE
+=========================================*/
+
+.doctor-details-profile-image {
+
+    width: 100%;
+
+    height: 360px;
+
+    overflow: hidden;
+
+}
+
+.doctor-details-profile-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+.doctor-details-profile-card:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+/*=========================================
+        PROFILE CONTENT
+=========================================*/
+
+.doctor-details-profile-content {
+
+    padding: 30px;
+
+}
+
+.doctor-details-profile-content h2 {
+
+    font-size: 28px;
+
+    color: #0b7a68;
+
+    margin-bottom: 10px;
+
+}
+
+.doctor-details-profile-content h4 {
+
+    color: #ff7a1a;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+}
+
+.doctor-details-profile-content p {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    color: #555;
+
+    font-size: 15px;
+
+}
+
+.doctor-details-profile-content i {
+
+    width: 18px;
+
+    color: #0b7a68;
+
+    font-size: 17px;
+
+}
+
+
+/*=========================================
+        SOCIAL ICONS
+=========================================*/
+
+.doctor-details-social {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 25px;
+
+    border-top: 1px solid #eee;
+
+}
+
+.doctor-details-social a {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    background: #0b7a68;
+
+    transition: .35s;
+
+}
+
+.doctor-details-social a:hover {
+
+    background: #ff7a1a;
+
+    transform: translateY(-4px);
+
+}
+
+
+/*=========================================
+        RIGHT SECTION
+=========================================*/
+
+.doctor-details-right {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+}
+
+/*=========================================
+        COMMON CARD
+=========================================*/
+
+.doctor-details-biography-card,
+.doctor-details-book-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+}
+
+
+/*=========================================
+        CARD TITLE
+=========================================*/
+
+.doctor-details-card-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+.doctor-details-card-title i {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #e8faf6;
+
+    color: #0b7a68;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 22px;
+
+}
+
+.doctor-details-card-title h3 {
+
+    font-size: 28px;
+
+    color: #0b7a68;
+
+}
+
+
+/*=========================================
+        BIOGRAPHY
+=========================================*/
+
+.doctor-details-biography-card p {
+
+    color: #666;
+
+    line-height: 1.9;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+
+    text-align: justify;
+
+}
+
+
+/*=========================================
+        BOOK APPOINTMENT
+=========================================*/
+
+.doctor-details-book-card {
+
+    margin-top: 10px;
+
+}
+
+
+/*=========================================
+        FORM
+=========================================*/
+
+#doctordBookingForm,
+#doctorBookingForm {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+}
+
+
+/*=========================================
+        FORM GROUP
+=========================================*/
+
+.doctor-details-form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.doctor-details-form-group label {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 10px;
+
+}
+
+
+/*=========================================
+        INPUTS
+=========================================*/
+
+.doctor-details-form-group input,
+.doctor-details-form-group select,
+.doctor-details-form-group textarea {
+
+    width: 100%;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 14px 16px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: .35s;
+
+    background: #fff;
+
+}
+
+.doctor-details-form-group textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+
+}
+
+.doctor-details-form-group input:focus,
+.doctor-details-form-group select:focus,
+.doctor-details-form-group textarea:focus {
+
+    border-color: #0b7a68;
+
+    box-shadow: 0 0 0 4px rgba(11, 122, 104, .08);
+
+}
+
+
+/*=========================================
+        BOOK BUTTON
+=========================================*/
+
+.doctor-details-book-btn {
+
+    width: 100%;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+}
+
+.doctor-details-book-btn:hover {
+
+    background: #ff7a1a;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*=========================================
+        SMALL INFO
+=========================================*/
+
+.doctor-details-book-note {
+
+    margin-top: 18px;
+
+    font-size: 14px;
+
+    color: #777;
+
+    line-height: 1.7;
+
+}
+
+.doctor-details-book-note i {
+
+    color: #0b7a68;
+
+    margin-right: 8px;
+
+}
+
+/*=========================================
+        SCHEDULE SECTION
+=========================================*/
+
+.doctor-details-schedule-section,
+.doctor-details-leave-section {
+
+    padding: 90px 0;
+
+    background: #f7fbfa;
+
+}
+
+.doctor-details-leave-section {
+
+    padding-top: 0;
+
+}
+
+
+/*=========================================
+        CARD
+=========================================*/
+
+.doctor-details-schedule-card,
+.doctor-details-leave-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+}
+
+
+/*=========================================
+        SECTION TITLE
+=========================================*/
+
+.doctor-details-section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+.doctor-details-section-heading i {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #e8faf6;
+
+    color: #0b7a68;
+
+    font-size: 22px;
+
+}
+
+.doctor-details-section-heading h2 {
+
+    font-size: 30px;
+
+    color: #0b7a68;
+
+}
+
+
+/*=========================================
+        TABLE WRAPPER
+=========================================*/
+
+.doctor-details-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+/*=========================================
+        TABLE
+=========================================*/
+
+.doctor-details-schedule-table,
+.doctor-details-leave-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 850px;
+
+}
+
+
+/*=========================================
+        TABLE HEADER
+=========================================*/
+
+.doctor-details-schedule-table thead,
+.doctor-details-leave-table thead {
+
+    background: #0b7a68;
+
+}
+
+.doctor-details-schedule-table th,
+.doctor-details-leave-table th {
+
+    color: #fff;
+
+    padding: 18px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+}
+
+
+/*=========================================
+        TABLE BODY
+=========================================*/
+
+.doctor-details-schedule-table td,
+.doctor-details-leave-table td {
+
+    padding: 18px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eee;
+
+    color: #555;
+
+    font-size: 15px;
+
+}
+
+.doctor-details-schedule-table tbody tr,
+.doctor-details-leave-table tbody tr {
+
+    transition: .3s;
+
+}
+
+.doctor-details-schedule-table tbody tr:hover,
+.doctor-details-leave-table tbody tr:hover {
+
+    background: #f5fffc;
+
+}
+
+
+/*=========================================
+        STATUS BADGES
+=========================================*/
+
+.doctor-details-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 95px;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+/*=========================================
+        AVAILABLE
+=========================================*/
+
+.doctor-details-status.available {
+
+    background: #dff8ea;
+
+    color: #169b57;
+
+}
+
+
+/*=========================================
+        LIMITED
+=========================================*/
+
+.doctor-details-status.limited {
+
+    background: #fff3d6;
+
+    color: #c88900;
+
+}
+
+
+/*=========================================
+        FULL
+=========================================*/
+
+.doctor-details-status.full {
+
+    background: #ffe2e2;
+
+    color: #d63232;
+
+}
+
+
+/*=========================================
+        APPROVED
+=========================================*/
+
+.doctor-details-status.approved {
+
+    background: #dff8ea;
+
+    color: #169b57;
+
+}
+
+
+/*=========================================
+        PENDING
+=========================================*/
+
+.doctor-details-status.pending {
+
+    background: #fff4d8;
+
+    color: #d98d00;
+
+}
+
+
+/*=========================================
+        REJECTED
+=========================================*/
+
+.doctor-details-status.rejected {
+
+    background: #ffe4e4;
+
+    color: #dc3d3d;
+
+}
+
+/*=========================================
+        HOVER ANIMATIONS
+=========================================*/
+
+.doctor-details-biography-card,
+.doctor-details-book-card,
+.doctor-details-schedule-card,
+.doctor-details-leave-card {
+
+    transition: .35s;
+
+}
+
+.doctor-details-biography-card:hover,
+.doctor-details-book-card:hover,
+.doctor-details-schedule-card:hover,
+.doctor-details-leave-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+
+/*=========================================
+        TABLE SCROLLBAR
+=========================================*/
+
+.doctor-details-table-wrapper::-webkit-scrollbar {
+
+    height: 8px;
+
+}
+
+.doctor-details-table-wrapper::-webkit-scrollbar-track {
+
+    background: #ececec;
+
+    border-radius: 20px;
+
+}
+
+.doctor-details-table-wrapper::-webkit-scrollbar-thumb {
+
+    background: #0b7a68;
+
+    border-radius: 20px;
+
+}
+
+.doctor-details-table-wrapper::-webkit-scrollbar-thumb:hover {
+
+    background: #08695b;
+
+}
+
+
+/*=========================================
+        SMOOTH TRANSITIONS
+=========================================*/
+
+.doctor-details-page * {
+
+    transition:
+        color .3s,
+        background .3s,
+        border .3s,
+        box-shadow .3s;
+
+}
+
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:1200px) {
+
+    .doctor-details-grid {
+
+        grid-template-columns: 320px 1fr;
+
+    }
+
+}
+
+
+@media(max-width:992px) {
+
+    .doctor-details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .doctor-details-profile-card {
+
+        max-width: 500px;
+
+        margin: auto;
+
+    }
+
+    .doctor-details-right {
+
+        margin-top: 20px;
+
+    }
+
+    .doctor-details-banner h1 {
+
+        font-size: 40px;
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+
+    .doctor-details-main {
+
+        padding: 60px 0;
+
+    }
+
+    .doctor-details-banner {
+
+        padding: 70px 0;
+
+    }
+
+    .doctor-details-banner h1 {
+
+        font-size: 34px;
+
+    }
+
+    .doctor-details-banner p {
+
+        font-size: 16px;
+
+    }
+
+    .doctor-details-profile-image {
+
+        height: 300px;
+
+    }
+
+    .doctor-details-profile-content {
+
+        padding: 25px;
+
+    }
+
+    .doctor-details-profile-content h2 {
+
+        font-size: 24px;
+
+    }
+
+    .doctor-details-card-title h3 {
+
+        font-size: 24px;
+
+    }
+
+    .doctor-details-section-heading h2 {
+
+        font-size: 24px;
+
+    }
+
+    .doctor-details-biography-card,
+    .doctor-details-book-card,
+    .doctor-details-schedule-card,
+    .doctor-details-leave-card {
+
+        padding: 25px;
+
+    }
+
+}
+
+
+@media(max-width:576px) {
+
+    .doctor-details-banner {
+
+        padding: 55px 0;
+
+    }
+
+    .doctor-details-banner h1 {
+
+        font-size: 28px;
+
+    }
+
+    .doctor-details-breadcrumb {
+
+        flex-wrap: wrap;
+
+        font-size: 13px;
+
+    }
+
+    .doctor-details-profile-image {
+
+        height: 260px;
+
+    }
+
+    .doctor-details-profile-content {
+
+        padding: 20px;
+
+    }
+
+    .doctor-details-profile-content h2 {
+
+        font-size: 22px;
+
+    }
+
+    .doctor-details-profile-content h4 {
+
+        font-size: 15px;
+
+    }
+
+    .doctor-details-social {
+
+        gap: 10px;
+
+    }
+
+    .doctor-details-social a {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+    .doctor-details-card-title {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .doctor-details-section-heading {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .doctor-details-card-title i,
+    .doctor-details-section-heading i {
+
+        width: 48px;
+
+        height: 48px;
+
+        font-size: 20px;
+
+    }
+
+    .doctor-details-book-btn {
+
+        height: 50px;
+
+        font-size: 15px;
+
+    }
+
+}
+
+
+/*=========================================
+        SCROLL ANIMATION
+=========================================*/
+
+.doctor-details-hidden {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: .8s;
+
+}
+
+.doctor-details-show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}

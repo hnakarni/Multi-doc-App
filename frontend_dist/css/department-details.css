@@ -1,0 +1,720 @@
+/*=========================================
+      DEPARTMENT DETAILS PAGE
+=========================================*/
+
+.department-details-page {
+    width: 100%;
+    background: #f7fbfa;
+}
+
+/*=========================================
+      BANNER
+=========================================*/
+
+.department-details-banner {
+    width: 100%;
+    background: linear-gradient(35deg,
+            #0B7D69 0%,
+            #139f85 100%);
+    padding: 90px 0;
+}
+
+.department-details-banner .container {
+
+    max-width: 1399px;
+
+    margin: auto;
+
+    padding: 0 20px;
+
+}
+
+.department-details-breadcrumb {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+}
+
+.department-details-breadcrumb a {
+    color: #DFF7F0;
+
+    text-decoration: none;
+
+
+    transition: .3s;
+}
+
+.department-details-breadcrumb span {
+
+    color: #fff;
+
+}
+
+.department-details-breadcrumb a:hover {
+    color: #ff7a1a;
+}
+
+/* .department-details-banner::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -120px;
+    right: -120px;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.099);
+
+}
+
+.department-details-banner::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -150px;
+    left: -150px;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.086);
+
+} */
+
+.department-details-banner h1 {
+    font-size: 60px;
+
+    font-weight: 700;
+
+    color: #fff;
+
+    margin-bottom: 15px;
+}
+
+.department-details-banner p {
+    color: #EAF8F5;
+
+    font-size: 20px;
+
+    max-width: 600px;
+
+    line-height: 30px;
+}
+
+/*=========================================
+      ABOUT SECTION
+=========================================*/
+
+.department-details-about {
+    padding: 90px 0;
+}
+
+.department-details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 45px;
+    align-items: flex-start;
+}
+
+.department-details-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+}
+
+.department-details-content h2 {
+    font-size: 34px;
+    color: #0b7a68;
+    margin-bottom: 25px;
+}
+
+.department-details-content p {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.department-details-list {
+    margin: 30px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.department-details-list li {
+    margin-bottom: 14px;
+    color: #444;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.department-details-list li:hover {
+    color: #ff7a1a;
+    transform: translateX(8px);
+}
+
+/*=========================================
+      INFORMATION CARD
+=========================================*/
+
+.department-details-info-card {
+
+    background: linear-gradient(135deg, #0b7a68, #17b59b);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    color: #fff;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+
+    transition: .4s;
+
+}
+
+.department-details-info-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.department-details-info-header {
+
+    padding: 35px;
+
+    text-align: center;
+
+}
+
+.department-details-info-header i {
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+
+}
+
+.department-details-info-header h3 {
+
+    font-size: 28px;
+
+}
+
+.department-details-info-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.department-details-info-box {
+
+    padding: 28px;
+
+    border-top: 1px solid rgba(255, 255, 255, .15);
+
+    border-right: 1px solid rgba(255, 255, 255, .15);
+
+    transition: .35s;
+
+}
+
+.department-details-info-box:nth-child(2),
+.department-details-info-box:nth-child(4) {
+
+    border-right: none;
+
+}
+
+.department-details-info-box:hover {
+
+    background: rgba(255, 255, 255, .12);
+
+}
+
+.department-details-info-box i {
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+
+    color: #fff;
+
+}
+
+.department-details-info-box h4 {
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+
+}
+
+.department-details-info-box p {
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    opacity: .95;
+
+}
+
+/*=========================================
+      RESPONSIVE
+=========================================*/
+
+@media(max-width:991px) {
+
+    .department-details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .department-details-banner h1 {
+
+        font-size: 38px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .department-details-banner {
+
+        padding: 70px 0;
+
+    }
+
+    .department-details-banner h1 {
+
+        font-size: 32px;
+
+    }
+
+    .department-details-content {
+
+        padding: 25px;
+
+    }
+
+    .department-details-info-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .department-details-info-box {
+
+        border-right: none;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .department-details-banner h1 {
+
+        font-size: 28px;
+
+    }
+
+    .department-details-content h2 {
+
+        font-size: 28px;
+
+    }
+
+    .department-details-content {
+
+        padding: 20px;
+
+    }
+
+    .department-details-info-header {
+
+        padding: 25px;
+
+    }
+
+}
+
+
+/*=========================================
+      PHOTO GALLERY
+=========================================*/
+
+.department-details-gallery-section {
+
+    padding: 90px 0;
+
+    background: #ffffff;
+
+}
+
+.department-details-section-title {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+.department-details-section-title h2 {
+
+    font-size: 36px;
+
+    color: #0b7a68;
+
+    margin-bottom: 12px;
+
+}
+
+.department-details-section-title p {
+
+    color: #666;
+
+    font-size: 16px;
+
+}
+
+.department-details-gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+.department-details-gallery-item {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+}
+
+.department-details-gallery-item img {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+.department-details-gallery-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(11, 122, 104, .75);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    transition: .4s;
+
+}
+
+.department-details-gallery-overlay i {
+
+    color: #fff;
+
+    font-size: 34px;
+
+    transform: scale(.5);
+
+    transition: .4s;
+
+}
+
+.department-details-gallery-item:hover img {
+
+    transform: scale(1.12);
+
+}
+
+.department-details-gallery-item:hover .department-details-gallery-overlay {
+
+    opacity: 1;
+
+}
+
+.department-details-gallery-item:hover i {
+
+    transform: scale(1);
+
+}
+
+/*=========================
+      RESPONSIVE
+=========================*/
+
+@media(max-width:992px) {
+
+    .department-details-gallery-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .department-details-gallery-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .department-details-gallery-item img {
+
+        height: 220px;
+
+    }
+
+}
+
+
+/*=========================================
+      OUR DOCTORS
+=========================================*/
+
+.department-details-doctors-section {
+
+    padding: 90px 0;
+    background: #f7fbfa;
+
+}
+
+.department-details-doctors-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+}
+
+.department-details-doctor-card {
+
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+    transition: .35s;
+    text-align: center;
+
+}
+
+.department-details-doctor-card:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .12);
+
+}
+
+.department-details-doctor-image {
+
+    overflow: hidden;
+
+}
+
+.department-details-doctor-image img {
+
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    transition: .4s;
+
+}
+
+.department-details-doctor-card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+.department-details-doctor-content {
+
+    padding: 25px;
+
+}
+
+.department-details-doctor-content h3 {
+
+    color: #0b7a68;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+}
+
+.department-details-doctor-content h4 {
+
+    color: #ff7a1a;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.department-details-doctor-content p {
+
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 15px;
+
+}
+
+.department-details-profile-btn {
+
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background: #0b7a68;
+    color: #fff;
+    text-decoration: none;
+    transition: .35s;
+    font-weight: 600;
+
+}
+
+.department-details-profile-btn:hover {
+
+    background: #ff7a1a;
+    transform: translateY(-3px);
+
+}
+
+/*=====================================
+        LIGHTBOX
+=====================================*/
+
+.department-lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .9);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 99999;
+
+}
+
+.department-lightbox img {
+
+    width: 80%;
+
+    max-width: 900px;
+
+    border-radius: 18px;
+
+}
+
+.department-lightbox-close {
+
+    position: absolute;
+
+    top: 40px;
+
+    right: 60px;
+
+    color: white;
+
+    font-size: 45px;
+
+    cursor: pointer;
+
+}
+
+/*=====================================
+      SCROLL EFFECT
+=====================================*/
+
+.department-hidden {
+
+    opacity: 0;
+
+    transform: translateY(60px);
+
+    transition: .7s;
+
+}
+
+.department-show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/*=========================
+      RESPONSIVE
+=========================*/
+
+@media(max-width:1100px) {
+
+    .department-details-doctors-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .department-details-doctors-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

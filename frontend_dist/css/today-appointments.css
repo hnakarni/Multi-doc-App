@@ -1,0 +1,789 @@
+/*=========================================
+        TODAY APPOINTMENTS PAGE
+=========================================*/
+
+.today-appointments-page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #f7fbfa;
+
+}
+
+
+/*=========================================
+        BANNER
+=========================================*/
+
+.today-appointments-banner {
+
+    background: linear-gradient(135deg, #0b7a68, #17b59b);
+
+    color: #fff;
+
+    padding: 80px 0;
+
+}
+
+.today-appointments-breadcrumb {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+}
+
+.today-appointments-breadcrumb a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.today-appointments-breadcrumb a:hover {
+
+    color: #ff7a1a;
+
+}
+
+.today-appointments-banner h1 {
+
+    font-size: 46px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+}
+
+.today-appointments-banner p {
+
+    max-width: 650px;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+
+}
+
+
+/*=========================================
+        MAIN
+=========================================*/
+
+.today-appointments-main {
+
+    padding: 90px 0;
+
+}
+
+.today-appointments-layout {
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    gap: 35px;
+
+    align-items: start;
+
+}
+
+
+/*=========================================
+        SIDEBAR
+=========================================*/
+
+.today-appointments-sidebar {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+    position: sticky;
+
+    top: 30px;
+
+}
+
+
+/*=========================================
+        SIDEBAR TOP
+=========================================*/
+
+.today-appointments-sidebar-top {
+
+    background: linear-gradient(135deg, #0b7a68, #17b59b);
+
+    color: #fff;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+}
+
+.today-appointments-sidebar-top img {
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: flex;
+
+    justify-self: center;
+
+    border: 5px solid rgba(255, 255, 255, .25);
+
+    margin-bottom: 20px;
+
+}
+
+.today-appointments-sidebar-top h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+
+}
+
+.today-appointments-sidebar-top p {
+
+    font-size: 15px;
+
+    opacity: .9;
+
+}
+
+
+/*=========================================
+        MENU
+=========================================*/
+
+.today-appointments-menu {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 20px;
+
+}
+
+.today-appointments-menu li {
+
+    margin-bottom: 10px;
+
+}
+
+.today-appointments-menu-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 18px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    color: #444;
+
+    font-weight: 500;
+
+    transition: .35s;
+
+}
+
+.today-appointments-menu-link i {
+
+    width: 22px;
+
+    color: #0b7a68;
+
+}
+
+.today-appointments-menu-link:hover {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    transform: translateX(6px);
+
+}
+
+.today-appointments-menu-link:hover i {
+
+    color: #fff;
+
+}
+
+.today-appointments-menu-link.active {
+
+    background: #0b7a68;
+
+    color: #fff;
+
+}
+
+.today-appointments-menu-link.active i {
+
+    color: #fff;
+
+}
+
+
+/*=========================================
+        CONTENT
+=========================================*/
+
+.today-appointments-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.today-appointments-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+
+}
+
+.today-appointments-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 35px;
+
+    border-bottom: 1px solid #eee;
+
+    padding-bottom: 20px;
+
+}
+
+.today-appointments-header h2 {
+
+    font-size: 32px;
+
+    color: #0b7a68;
+
+}
+
+.today-appointments-header p {
+
+    color: #777;
+
+    font-weight: 600;
+
+}
+
+
+/*=========================================
+        FILTER SECTION
+=========================================*/
+
+.today-appointments-filter {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+
+}
+
+.today-appointments-filter-group {
+
+    flex: 1;
+
+}
+
+.today-appointments-filter-group label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #333;
+
+}
+
+.today-appointments-filter-group select {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+}
+
+.today-appointments-filter-group select:focus {
+
+    border-color: #0b7a68;
+
+    box-shadow: 0 0 0 4px rgba(11, 122, 104, .08);
+
+}
+
+.today-appointments-search-btn {
+
+    height: 52px;
+
+    padding: 0 28px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .35s;
+
+}
+
+.today-appointments-search-btn:hover {
+
+    background: #ff7a1a;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*=========================================
+        TABLE
+=========================================*/
+
+.today-appointments-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+.today-appointments-table {
+
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+
+}
+
+.today-appointments-table thead {
+
+    background: #0b7a68;
+
+}
+
+.today-appointments-table th {
+
+    color: #fff;
+
+    padding: 18px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+.today-appointments-table td {
+
+    padding: 18px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eee;
+
+    color: #555;
+
+    font-size: 15px;
+
+}
+
+.today-appointments-table tbody tr {
+
+    transition: .3s;
+
+}
+
+.today-appointments-table tbody tr:hover {
+
+    background: #f5fffc;
+
+}
+
+.today-appointments-table strong {
+
+    color: #222;
+
+}
+
+.today-appointments-table small {
+
+    color: #888;
+
+}
+
+
+/*=========================================
+        STATUS
+=========================================*/
+
+.today-appointments-status {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 95px;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.today-appointments-status.completed {
+
+    background: #dff8ea;
+
+    color: #159c58;
+
+}
+
+.today-appointments-status.pending {
+
+    background: #fff4d8;
+
+    color: #d98d00;
+
+}
+
+.today-appointments-status.ongoing {
+
+    background: #e8f1ff;
+
+    color: #2563eb;
+
+}
+
+.today-appointments-status.cancelled {
+
+    background: #ffe4e4;
+
+    color: #dc3d3d;
+
+}
+
+
+/*=========================================
+        VIEW BUTTON
+=========================================*/
+
+.today-appointments-view-btn {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #0b7a68;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+}
+
+.today-appointments-view-btn:hover {
+
+    background: #ff7a1a;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*=========================================
+        CARD HOVER
+=========================================*/
+
+.today-appointments-card {
+
+    transition: .35s;
+
+}
+
+.today-appointments-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+
+/*=========================================
+        TABLE SCROLLBAR
+=========================================*/
+
+.today-appointments-table-wrapper::-webkit-scrollbar {
+
+    height: 8px;
+
+}
+
+.today-appointments-table-wrapper::-webkit-scrollbar-track {
+
+    background: #ececec;
+
+    border-radius: 20px;
+
+}
+
+.today-appointments-table-wrapper::-webkit-scrollbar-thumb {
+
+    background: #0b7a68;
+
+    border-radius: 20px;
+
+}
+
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:992px) {
+
+    .today-appointments-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .today-appointments-sidebar {
+
+        position: relative;
+
+        top: 0;
+
+    }
+
+    .today-appointments-filter {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .today-appointments-main {
+
+        padding: 60px 0;
+
+    }
+
+    .today-appointments-banner {
+
+        padding: 70px 0;
+
+    }
+
+    .today-appointments-banner h1 {
+
+        font-size: 32px;
+
+    }
+
+    .today-appointments-card {
+
+        padding: 25px;
+
+    }
+
+    .today-appointments-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+    }
+
+    .today-appointments-header h2 {
+
+        font-size: 28px;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .today-appointments-banner {
+
+        padding: 55px 0;
+
+    }
+
+    .today-appointments-banner h1 {
+
+        font-size: 28px;
+
+    }
+
+    .today-appointments-breadcrumb {
+
+        flex-wrap: wrap;
+
+        font-size: 13px;
+
+    }
+
+    .today-appointments-sidebar-top img {
+
+        width: 95px;
+
+        height: 95px;
+
+    }
+
+    .today-appointments-card {
+
+        padding: 20px;
+
+    }
+
+    .today-appointments-search-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    .today-appointments-table th,
+
+    .today-appointments-table td {
+
+        padding: 12px;
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/*=========================================
+        SCROLL ANIMATION
+=========================================*/
+
+.today-appointments-hidden {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: .8s;
+
+}
+
+.today-appointments-show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}   
