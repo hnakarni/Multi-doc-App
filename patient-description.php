@@ -570,6 +570,8 @@ else{
 
                                 Print Prescription
 
+                            </button> 
+                            </button> 
                             </button> -->
 
                             <button type="button" onclick="window.print()" class="print-prescription-btn" id="printPrescriptionBtn">
